@@ -147,8 +147,7 @@ class TextGenerator:
             no_repeat_ngram_size=config.no_repeat_ngram_size,
             early_stopping=config.early_stopping,
             pad_token_id=self.tokenizer.pad_token_id,
-            eos_token_id=self.tokenizer.eos_token_id,
-            **kwargs
+            eos_token_id=self.tokenizer.eos_token_id
         )
         
         # Tokenize input
